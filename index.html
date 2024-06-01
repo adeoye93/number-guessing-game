@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guessing Game</h1>
+        <p>Guess the hidden number between 1 and 100</p>
+        <div class="numbers">
+            <span id="num1" class="number">?</span>,
+            <span id="num2" class="number">?</span>,
+            <span id="num3" class="number">?</span>,
+            <span id="num4" class="number">?</span>,
+            <span id="num5" class="number">?</span>
+        </div>
+        <input type="text" id="guessInput" placeholder="Enter your guess">
+        <button id="guessButton">Guess</button>
+        <button id="restartButton" style="display: none;">Restart</button>
+        <p id="message"></p>
+        <p id="attemptsLeft"></p>
+    </div>
+    <audio id="correctSound" src="correct.mp3"></audio>
+    <audio id="incorrectSound" src="incorrect.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
